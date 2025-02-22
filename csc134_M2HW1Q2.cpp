@@ -12,6 +12,8 @@ int main()
 {
     // This program is used to calculate the volume, cost, customer charge, and profit of a crate of any size
 
+    cout << "question 2" << endl;
+
     // Constants for cost and amount charged
     const double COST_PER_CUBIC_FOOT = 0.3;
     const double MAX_CHARGE_PER_CUBIC_FOOT = 0.52;
