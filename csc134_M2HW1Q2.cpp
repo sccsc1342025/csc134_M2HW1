@@ -1,5 +1,5 @@
 // CSC 134
-// M2HW1
+// M2HW1-GOLD
 // Sebastian Camacho
 // 02/22/2025
 
