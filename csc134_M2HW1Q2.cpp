@@ -14,7 +14,7 @@ int main()
 
     // Constants for cost and amount charged
     const double COST_PER_CUBIC_FOOT = 0.3;
-    const double CHARGE_PER_CUBIC_FOOT = 0.52;
+    const double MAX_CHARGE_PER_CUBIC_FOOT = 0.52;
 
     // Variables
     double length,width,height,volume,cost,charge,profit;
@@ -34,7 +34,14 @@ int main()
     // Calculate the crate's volume, the cost to produce it, the charge to the customer, and the profit
     volume = length * width * height;
     cost= volume * COST_PER_CUBIC_FOOT;
-    charge = volume * CHARGE_PER_CUBIC_FOOT;
+
+    charge = volume * MAX_CHARGE_PER_CUBIC_FOOT;
+    // does not exceed 0.52
+    if (charge > volume * MAX_CHARGE_PER_CUBIC_FOOT) {
+        charge = volume * MAX_CHARGE_PER_CUBIC_FOOT;
+    }
+
+    // display profit
     profit = charge - cost;
 
     // Display calculations
