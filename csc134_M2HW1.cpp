@@ -12,6 +12,8 @@ int main()
     string name;
     double startingBalance, depositAmount, withdrawalAmount;
 
+    cout << "question 1" << endl;
+    
     // user name
     cout << "Enter your name: ";
     cin >> name;
